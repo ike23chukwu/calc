@@ -44,14 +44,14 @@ function calculate() {
 }
 
 function evaluateExpression(expression) {
-    // Replace trigonometric functions with their JavaScript equivalents
+
     expression = expression.replace(/sin/g, 'Math.sin');
     expression = expression.replace(/cos/g, 'Math.cos');
     expression = expression.replace(/tan/g, 'Math.tan');
 
-    // Replace logarithmic function with its JavaScript equivalent
+
     expression = expression.replace(/log/g, 'Math.log10');
 
-    // Use eval to evaluate the modified expression
+
     return eval(expression);
 }
